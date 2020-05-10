@@ -5,8 +5,8 @@ import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 class RandTabel extends Component {
   render() {
-    const { item, corectezOper, stergOper } = this.props; //  Nu item, operator. Vezi ce vine de la "CorpTabel"
-    const { nume, numePrenume, email, locatie, id } = item; //  Nu item, operator
+    const { operator, corectezOper, stergOper } = this.props;
+    const { nume, numePrenume, email, locatie, id } = operator;
     return (
       <tr>
         <td>{nume}</td>
