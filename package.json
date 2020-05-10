@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
@@ -32,3 +36,33 @@
     ]
   }
 }
+[
+  {
+    "id": 1,
+    "nume": "marcel_abrudan",
+    "numePrenume": "Abrudan Marcel",
+    "email": "mabrudan12@yahoo.com",
+    "locatie": "Alba"
+  },
+  {
+    "id": 2,
+    "nume": "ioana_babic",
+    "numePrenume": "Babic Ioana",
+    "email": "iobabic@gmail.com",
+    "locatie": "Cluj"
+  },
+  {
+    "id": 3,
+    "nume": "emil_eftimie",
+    "numePrenume": "Eftimie Emil",
+    "email": "emileftimie2@yahoo.com",
+    "locatie": "Botosani"
+  },
+  {
+    "id": 4,
+    "nume": "anda_neacsu",
+    "numePrenume": "Neacșu Anda",
+    "email": "andaneacsu32@yahoo.com",
+    "locatie": "Caraș Severin"
+  }
+]
