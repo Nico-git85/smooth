@@ -49,7 +49,29 @@ class App extends Component {
 
   //  In formular s-a selectat submit
   formSubmit(oper) {
-    //  . . .
+    const idOper = parseInt(oper.id);
+    let op;
+    if (parseInt(oper.id) === 0) {
+      //  Este o adaugare
+      oper.id = 1000; //  De fapt va fi un id adevarat, venit din baza de date!
+      op = [...this.state.operatori, oper];
+    } else {
+      //  Este o editare
+      const opEd = this.state.operatori;
+      op = opEd.map((item) => {
+        if (parseInt(item.id) === idOper) {
+          return oper;
+        } else {
+          return item;
+        }
+      });
+    }
+    //  Refac "state"
+    this.setState({
+      operatori: op,
+      opedit: { id: 0, nume: "", numePrenume: "", email: "", locatie: "" },
+      cheie: 0,
+    });
   }
 
   render() {
